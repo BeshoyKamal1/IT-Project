@@ -1,0 +1,90 @@
+/*Variables for colors*/
+body.theme2 {
+  --bg: #373856; /*dark blue for background*/
+  --text: #ffffff; /*white for texts*/
+  --primary: #373856; /*dark blue for elements*/
+  --accent: #F1E76D;/*yellow*/
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/*upper part*/
+body.theme2 nav,
+bodt.theme2 .search-box,
+body.theme2 .theme container {
+  background-color: var(--accent);
+}
+
+/*Navbar*/
+body.theme2 nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 50px;
+}
+/*Links*/
+body.theme2 nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  gap: 20px;
+}
+
+body.theme2 .search-box,
+body.theme2 .themecontainer {
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+}
+
+/*background+cards section*/
+body.theme2 .games {
+  background-color: var(--bg);
+  background-image: url('https://i.ibb.co/bjdMjLwm/9212ad05-7869-402d-bc98-3c3af8033b1b-20260501-153209-0000.jpg');
+  background-size: cover;
+  background-position: center;
+ background-repeat: repeat;
+ display: grid;
+ grid-template-columns: repeat(3,2fr);
+ justify-content: center;
+ gap: 30px;
+ padding: 40px 20px;
+ color: black;
+}
+
+/*cards*/
+body.theme2 .card-game {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 20px;
+  border: 2px solid var(--accent);
+  padding: 15px;
+  transition: 0.3s;
+}
+
+/*Hover*/
+body.theme2 .card-game:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+/*buttons*/
+body.theme2 .book-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+body.theme2 .book-btn:hover {
+  background-color: var(--accent);
+  color: black;
+}
+
+/*search*/
+body.theme2 .search-box input {
+  padding: 10px 15px;
+  width: 250px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
